@@ -2,17 +2,20 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet/less" type="text/less" href="/css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="#" alt="Логотип">
-      </a>
-      <div class="menu-burger">
-        <button class="menu-burger__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <div class="page-header-wrapper">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="/img/mobile/pink.svg" alt="Логотип">
+        </a>
+        <div class="menu-burger">
+          <button class="menu-burger__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -30,30 +33,30 @@
           </li>
         </ul>
       </nav>
+      <h1 class="page-main__caption">Взгляните на жизнь иначе!</h1>
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__caption">Взгляните на жизнь иначе!</h1>
       <section class="app-download">
         <h2 class="visually-hidden">Загрузка приложения</h2>
         <div class="app-download__button-wrapper">
-          <button class="app-download__button" type="button">
-            <span class="app-download__button-text">Загрузить приложение</span>
-          </button>
+          <a class="app-download__button" href="#">
+            <span class="app-download__button-text">Скачать приложение</span>
+          </a>
         </div>
         <div class="app-download__link-wrapper">
           <a class="app-download__link" href="#">
-            <img class="app-download__link-image apple-image" src="#" alt="Скачать приложение для Apple">
+            <img class="app-download__link-image apple-image" src="/img/mobile/apple-logo.svg" alt="Скачать приложение для Apple">
           </a>
           <a class="app-download__link" href="#">
-            <img class="app-download__link-image android-image" src="#" alt="Скачать приложение для Android">
+            <img class="app-download__link-image android-image" src="/img/mobile/android-logo.svg" alt="Скачать приложение для Android">
           </a>
           <a class="app-download__link" href="#">
-            <img class="app-download__link-image microsoft-image" src="#" alt="Скачать приложение для Microsoft">
+            <img class="app-download__link-image microsoft-image" src="/img/mobile/microsoft-logo.svg" alt="Скачать приложение для Microsoft">
           </a>
-          <div class="app-download__desc-wrapper">
-            <p class="app-download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
+        </div>
+        <div class="app-download__desc-wrapper">
+          <p class="app-download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
 
@@ -89,8 +92,7 @@
             <dd class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
           </div>
         </dl>
-        <div class="">
-          Здесь будет изображение смартфона с надписью "Всем привет!"
+        <div class="features__end-photo">
         </div>
       </section>
 
@@ -131,15 +133,15 @@
         <h2 class="visually-hidden">Коммерческое предложение</h2>
         <div class="commercial__list-wrapper">
           <div class="commercial__item-wrapper">
-
-            <span class="commercial__item-caption">СТАНДАРТ</span>
-            <p class="commercial__item-price">3,99 USD</p>
-
+            <div class="commercial__item-caption-wrapper">
+              <p class="commercial__item-caption">СТАНДАРТ</p>
+              <p class="commercial__item-price">3,99 USD</p>
+            </div>
             <ul class="commercial__list">
 
-              <li class="commercial__item">Розовый фильтр<img src="#" alt="Включено" class="commercial__item-check-mark"></li>
-              <li class="commercial__item">Смайлики<img src="#" alt="Включено" class="commercial__item-check-mark"></li>
-              <li class="commercial__item">Комментарии<img src="#" alt="Отсутствует" class="commercial__item-miss-mark"></li>
+              <li class="commercial__item">Розовый фильтр<img src="/img/mobile/yes.svg" alt="Включено" class="commercial__item-check-mark"></li>
+              <li class="commercial__item">Смайлики<img src="/img/mobile/yes.svg" alt="Включено" class="commercial__item-check-mark"></li>
+              <li class="commercial__item">Комментарии<img src="/img/mobile/no.svg" alt="Отсутствует" class="commercial__item-miss-mark"></li>
 
             </ul>
 
@@ -148,7 +150,7 @@
           <div class="commercial__item-wrapper">
 
             <span class="commercial__item-caption">текст</span>
-            <p class="commercial__item-price">текстD</p>
+            <p class="commercial__item-price">текст</p>
 
             <ul class="commercial__list">
 
@@ -193,7 +195,7 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
 
-        <h2 class="">Остались вопросы? Свяжитесь с нами!</h2> <!-- перенос строки будет в css -->
+        <h2 class="contacts-title">Остались вопросы? Свяжитесь с нами!</h2> <!-- перенос строки будет в css -->
         <div class="contacts-wrapper">
 
           <ul class="contacts__list">
@@ -237,7 +239,7 @@
         <h2 class="visually-hidden">Социальные сети</h2>
 
         <div class="brandname-image">
-          <img src="#" alt="Логотип Pink">
+          <img src="/img/mobile/logotype-blue-tablet.png" alt="Логотип Pink">
         </div>
 
         <div class="page-footer__social-wrapper">
@@ -245,20 +247,23 @@
           <ul class="social__list">
 
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">
-                <img src="#" alt="Твитер">
+              <a class="social__link social__link--twitter" href="/img/mobile/twitter.svg">
+                <img src="/img/mobile/twitter.svg" alt="Твитер">
+                <!-- <img src="/source/img/mobile/Ellipse.svg" alt="Эллипс"> -->
               </a>
             </li>
 
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
-                <img src="#" alt="Фэйсбук">
+              <a class="social__link social__link--facebook" href="/img/mobile/facebook.png">
+                <img src="/img/mobile/facebook.png" alt="Фэйсбук">
+                <!-- <img src="/source/img/mobile/Ellipse.svg" alt="Эллипс"> -->
               </a>
             </li>
 
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">
-                <img src="#" alt="Ютуб">
+              <a class="social__link social__link--youtube" href="/img/mobile/youtube.png">
+                <img src="/img/mobile/youtube.png" alt="Ютуб">
+                <!-- <img src="/source/img/mobile/Ellipse.svg" alt="Эллипс"> -->
               </a>
             </li>
 
@@ -267,8 +272,11 @@
         </div>
 
         <div class="developer-link-wrapper">
+          <p class="developer-link-text">
+            Разработано
+          </p>
           <a class="developer-link" href="http://htmlacademy.ru">
-            <img src="#" alt="Разработано">
+            <img src="/img/mobile/html academy.png" alt="Разработано">
           </a>
         </div>
 
